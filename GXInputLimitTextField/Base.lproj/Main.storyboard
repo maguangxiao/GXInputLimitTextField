@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,13 +13,110 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GXInputLimitTextField" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="只允许输入数字，并限制最大位数为9" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UBe-r4-Gs9" customClass="GXInputLimitTextField" customModule="GXInputLimitTextField" customModuleProvider="target">
+                                <rect key="frame" x="12" y="108" width="351" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="wjV-Mc-Olv"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="只允许输入首位非零数字，并限制最大位数为9" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mOV-xF-Qqz" customClass="GXInputLimitTextField" customModule="GXInputLimitTextField" customModuleProvider="target">
+                                <rect key="frame" x="12" y="156" width="351" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="rvl-Rs-0jh"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="整数4位 小数两位" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rc9-Qu-xFg" customClass="GXInputLimitTextField" customModule="GXInputLimitTextField" customModuleProvider="target">
+                                <rect key="frame" x="12" y="257" width="351" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RgK-2B-y2N"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="整数2位、小数4位 且整数首位不为0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UII-6F-f5d" customClass="GXInputLimitTextField" customModule="GXInputLimitTextField" customModuleProvider="target">
+                                <rect key="frame" x="12" y="295" width="351" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="R8U-hF-1kw"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="身份证号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Cu-7p-QeD" customClass="GXInputLimitTextField" customModule="GXInputLimitTextField" customModuleProvider="target">
+                                <rect key="frame" x="12" y="337" width="351" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yel-yG-Wbd"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="限制输入10个任意字符" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cyh-48-Guq" customClass="GXInputLimitTextField" customModule="GXInputLimitTextField" customModuleProvider="target">
+                                <rect key="frame" x="12" y="381" width="351" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="iZt-5l-28Z"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入11位手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mco-t1-fJH" customClass="GXInputLimitTextField" customModule="GXInputLimitTextField" customModuleProvider="target">
+                                <rect key="frame" x="12" y="201" width="351" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kME-5N-FEW"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rc9-Qu-xFg" firstAttribute="trailing" secondItem="UBe-r4-Gs9" secondAttribute="trailing" id="4ge-vn-aQU"/>
+                            <constraint firstItem="Cyh-48-Guq" firstAttribute="leading" secondItem="UBe-r4-Gs9" secondAttribute="leading" id="6Sp-Td-x57"/>
+                            <constraint firstItem="mOV-xF-Qqz" firstAttribute="leading" secondItem="UBe-r4-Gs9" secondAttribute="leading" id="80f-Z1-Bhg"/>
+                            <constraint firstItem="UBe-r4-Gs9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="AUo-zF-4Bb"/>
+                            <constraint firstItem="Cyh-48-Guq" firstAttribute="trailing" secondItem="UBe-r4-Gs9" secondAttribute="trailing" id="BPP-aI-MMC"/>
+                            <constraint firstItem="rc9-Qu-xFg" firstAttribute="leading" secondItem="UBe-r4-Gs9" secondAttribute="leading" id="CLx-P8-7uu"/>
+                            <constraint firstItem="mOV-xF-Qqz" firstAttribute="top" secondItem="UBe-r4-Gs9" secondAttribute="bottom" constant="18" id="Dso-9G-BCM"/>
+                            <constraint firstItem="8Cu-7p-QeD" firstAttribute="trailing" secondItem="UBe-r4-Gs9" secondAttribute="trailing" id="IpV-v7-Va9"/>
+                            <constraint firstItem="UII-6F-f5d" firstAttribute="leading" secondItem="UBe-r4-Gs9" secondAttribute="leading" id="K6N-JH-6Rv"/>
+                            <constraint firstItem="Cyh-48-Guq" firstAttribute="top" secondItem="8Cu-7p-QeD" secondAttribute="bottom" constant="14" id="NsV-Uu-u2r"/>
+                            <constraint firstItem="Mco-t1-fJH" firstAttribute="top" secondItem="mOV-xF-Qqz" secondAttribute="bottom" constant="15" id="OSH-F2-JGs"/>
+                            <constraint firstItem="Mco-t1-fJH" firstAttribute="trailing" secondItem="UBe-r4-Gs9" secondAttribute="trailing" id="OX8-kF-SA2"/>
+                            <constraint firstItem="rc9-Qu-xFg" firstAttribute="top" secondItem="Mco-t1-fJH" secondAttribute="bottom" constant="26" id="S1J-v9-IQM"/>
+                            <constraint firstItem="mOV-xF-Qqz" firstAttribute="trailing" secondItem="UBe-r4-Gs9" secondAttribute="trailing" id="SRk-XG-cPA"/>
+                            <constraint firstItem="8Cu-7p-QeD" firstAttribute="top" secondItem="UII-6F-f5d" secondAttribute="bottom" constant="12" id="ZbL-CW-iAg"/>
+                            <constraint firstItem="UBe-r4-Gs9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="88" id="bDF-DQ-G5X"/>
+                            <constraint firstItem="Mco-t1-fJH" firstAttribute="leading" secondItem="UBe-r4-Gs9" secondAttribute="leading" id="gdc-ZO-Ksl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UBe-r4-Gs9" secondAttribute="trailing" constant="12" id="iy7-xk-MCQ"/>
+                            <constraint firstItem="8Cu-7p-QeD" firstAttribute="leading" secondItem="UBe-r4-Gs9" secondAttribute="leading" id="jlU-kx-rf5"/>
+                            <constraint firstItem="UII-6F-f5d" firstAttribute="top" secondItem="rc9-Qu-xFg" secondAttribute="bottom" constant="8" id="mbv-A4-aFS"/>
+                            <constraint firstItem="UII-6F-f5d" firstAttribute="trailing" secondItem="UBe-r4-Gs9" secondAttribute="trailing" id="wBP-3D-cB7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="fifthTextField" destination="UII-6F-f5d" id="6vE-q3-l3C"/>
+                        <outlet property="firstTextField" destination="UBe-r4-Gs9" id="crJ-1a-MtZ"/>
+                        <outlet property="fourthTextField" destination="rc9-Qu-xFg" id="4js-PY-Wq9"/>
+                        <outlet property="secondTextField" destination="mOV-xF-Qqz" id="F1y-cE-y9U"/>
+                        <outlet property="seventhTextField" destination="Cyh-48-Guq" id="voJ-aP-FtU"/>
+                        <outlet property="sixthTextField" destination="8Cu-7p-QeD" id="qIP-ZZ-sgf"/>
+                        <outlet property="thirdTextField" destination="Mco-t1-fJH" id="5S8-aY-8NI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

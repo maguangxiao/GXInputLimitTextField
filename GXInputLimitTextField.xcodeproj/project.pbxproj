@@ -12,6 +12,7 @@
 		40A9EF4220629113007ADFCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A9EF4020629113007ADFCA /* Main.storyboard */; };
 		40A9EF4420629113007ADFCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A9EF4320629113007ADFCA /* Assets.xcassets */; };
 		40A9EF4720629113007ADFCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A9EF4520629113007ADFCA /* LaunchScreen.storyboard */; };
+		40A9EF4F206294D2007ADFCA /* GXInputLimitTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9EF4E206294D2007ADFCA /* GXInputLimitTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		40A9EF4320629113007ADFCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40A9EF4620629113007ADFCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40A9EF4820629113007ADFCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40A9EF4E206294D2007ADFCA /* GXInputLimitTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GXInputLimitTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				40A9EF3C20629113007ADFCA /* AppDelegate.swift */,
 				40A9EF3E20629113007ADFCA /* ViewController.swift */,
+				40A9EF4E206294D2007ADFCA /* GXInputLimitTextField.swift */,
 				40A9EF4020629113007ADFCA /* Main.storyboard */,
 				40A9EF4320629113007ADFCA /* Assets.xcassets */,
 				40A9EF4520629113007ADFCA /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40A9EF3F20629113007ADFCA /* ViewController.swift in Sources */,
+				40A9EF4F206294D2007ADFCA /* GXInputLimitTextField.swift in Sources */,
 				40A9EF3D20629113007ADFCA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
